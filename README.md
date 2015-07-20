@@ -12,7 +12,7 @@
 
 2. Then run:
 ```bash
-$ docker run -v /absolute/path/to/cores/:/opt/solr/cores/solr/ -p "8983:8983" docker-solr
+$ docker run -v /absolute/path/to/cores/:/opt/solr/config/cores/ -p "8983:8983" dirkmoors/solr
 ```
 
 3. Then you can visit our browser at http://localhost:8983/solr/
