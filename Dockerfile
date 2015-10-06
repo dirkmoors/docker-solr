@@ -28,8 +28,6 @@ RUN set -x \
     && rm -rf /var/lib/apt/lists/* \
     && apt-get purge -y --auto-remove $buildDeps
 
-VOLUME ${SOLR_CONFIG_ROOT}/cores/
-
 WORKDIR ${SOLR_CONFIG_ROOT}
 
 CMD ["java", "-Dsolr.solr.home=cores", "-jar", "start.jar"]
